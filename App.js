@@ -1,20 +1,24 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import Search from './Components/Search'
+import {Text, StyleSheet, View} from 'react-native';
+import Navigation from './Navigation/Navigation'
+import {NavigationContainer} from "@react-navigation/native";
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Search/>
-    </View>
-  );
+    return (
+        <NavigationContainer>
+
+            <Navigation/>
+
+        </NavigationContainer>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });

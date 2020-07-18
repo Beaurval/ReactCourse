@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     },
     mainContainer: {
         flex: 1,
-        marginTop: 40
+        backgroundColor: 'white'
     },
     loadingIndicator: {
         position: 'absolute',
